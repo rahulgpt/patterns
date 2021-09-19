@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,UAAU,EAAE,6BAA6B;CAAG;;AAEhD,AAAA,eAAe,AAAA,MAAM,CAAC;EAClB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,kBAAkB;EAC/C,UAAU,EAAE,6BAA6B;EACzC,OAAO,EAAE,MAAM;CAAG",
+    "sources": [
+        "tempCodeRunnerFile.sass"
+    ],
+    "names": [],
+    "file": "tempCodeRunnerFile.css"
+}

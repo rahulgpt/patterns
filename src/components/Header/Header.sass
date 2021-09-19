@@ -1,0 +1,140 @@
+@import ./_UserMenu
+$cart-badge-color: white
+    
+.header-container 
+    display: flex
+    margin: 6em 10em
+    margin-bottom: 3em
+    justify-content: space-between
+
+
+.page-title 
+    font-size: 2.5em
+    font-weight: 600
+    margin-bottom: 5px
+
+.sub-heading
+    font-weight: 500
+    margin-bottom: 6em
+
+.page-nav 
+    font-size: 0.8em
+
+.down-arrow
+    width: 20px
+    height: 23px
+    margin-left: 0.5em
+
+
+/*
+ .filter-container 
+ display: flex
+ flex-direction: column
+ justify-content: flex-end
+ */
+
+.filter 
+    align-self: flex-end
+    display: flex
+    align-items: center
+
+    
+.signin-filter-container
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+
+.signin-container
+    display: flex
+    align-items: center     
+    opacity: 0
+
+
+.margin
+    margin-right: 2.5em
+
+.avatar
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    border: 5px solid $cart-badge-color 
+    cursor: pointer
+    
+
+@media only screen and ( max-width: 1200px )
+    .header-container 
+        margin: 6em 8em
+        margin-bottom: 3em
+
+
+@media only screen and ( max-width: 1024px )
+    .header-container 
+        margin: 6em 
+        margin-bottom: 3em
+
+
+@media only screen and ( max-width: 769px )
+    .header-container 
+        margin: 4em 
+
+    #sign-in-btn 
+        display: none
+
+    .avatar
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        border: 4px solid $cart-badge-color
+
+    .cart-icon
+        width: 25px
+        height: 25px
+
+    .wrapper 
+        left: 14px
+        top: 16px
+        font-weight: 500
+        font-size: 0.8em
+        width: 23px
+        height: 23px
+
+
+@media only screen and ( max-width: 600px )
+    .header-container
+        margin: 4em 2em
+        
+    .page-title 
+        font-size: 2.2em
+
+    .sub-heading
+        font-size: 0.8em
+
+    .filter
+        font-size: 0.9em
+
+@media only screen and ( max-width: 480px )
+    .header-container
+        margin: 2em 1em
+
+    .page-title 
+        font-size: 2em
+
+    .sub-heading
+        font-size: 0.7em
+
+    .page-nav 
+        font-size: 0.7em
+
+    .signin-container
+        flex-direction: column-reverse
+        
+    .margin
+        margin-right: 0 
+        margin-top: 1em
+
+    
+
+    
+
+        

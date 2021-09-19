@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,QAAQ,EAAE,QAAQ;EAClB,QAAQ,EAAE,MAAM;EAChB,UAAU,EAAE,mBAAmB;CAAG",
+    "sources": [
+        "ImageContainer.sass"
+    ],
+    "names": [],
+    "file": "ImageContainer.css"
+}
