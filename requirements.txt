@@ -28,3 +28,4 @@ stripe==2.49.0
 toml==0.10.1
 urllib3==1.25.9
 zope.interface==5.1.0
+Pillow==9.2.0
