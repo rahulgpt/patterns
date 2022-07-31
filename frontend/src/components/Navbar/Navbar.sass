@@ -1,0 +1,443 @@
+//@import ./_ShopMenu
+
+$nav-bg-color: white//#F0E6DD  
+$nav-hover-color: #C84D0C
+$overlay-bg-color: #18171b
+$cart-badge-color: #ACC9CD
+
+// ------------- Search Overlay Menu ------------------- //
+
+.searchmenu-btn
+  background-color: #1f1e22
+  border: none
+  height: 50px
+  width: 50px
+  cursor: pointer
+
+#searchmenu-icon
+  width: 20px
+  height: auto
+
+.search-input
+  width: 400px
+  height: 50px
+  padding: 1.5rem
+  border: none
+  background-color: #1f1e22
+  color: #979698
+  font-size: 1rem
+  margin-top: 0 // Overriding mtop of input defined in Contact.sass
+
+.search-input:focus
+  color: white
+
+.search-container
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 4rem
+
+.close-btn-search
+  background-color: $overlay-bg-color
+  margin-right: 6rem
+  margin-top: 4.7rem
+  border: none
+  border-radius: 50%
+  padding: 1rem
+  display: flex
+
+.search-flex
+  display: flex
+  justify-content: flex-end
+
+// -------------------------------------------- //
+
+// ---------- OverlayMenu ---------------------//
+
+.link-container
+  color: white
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin-left: 8rem
+  margin-top: 6rem
+
+  h5
+    color: white
+    font-size: 1.5rem
+    margin-bottom: 0.5rem
+
+.info-container-main
+  display: flex
+  margin-left: 8rem
+  margin-top: 10rem
+
+.info-container
+  margin-right: 6rem
+  h3
+    font-size: 1rem
+    margin-bottom: 0.3rem
+  p
+    font-size: 1rem
+    margin-bottom: 0.3rem
+    color: #68686a
+
+.reimagined
+  margin-top: 2rem
+
+  a
+    margin-right: 0.8rem !important
+    border: 1px solid #68686a
+    border-radius: 50%
+    padding: 0.5rem
+    width: 38px
+    height: 38px
+
+.overlay-menu
+  position: fixed
+  top: 0
+  width: 100vw
+  height: 100vh
+  z-index: 2
+  background-color: $overlay-bg-color
+  color: white
+
+.close-btn
+  background-color: $overlay-bg-color
+  margin-left: 5.7rem
+  margin-top: 4.7rem
+  border: none
+  border-radius: 50%
+  padding: 1rem
+
+#close-icon
+
+  width: 25px
+  height: auto
+  cursor: pointer
+
+// ------------------------------------------------------------- //
+
+#top-container
+  display: flex
+  justify-content: flex-end
+  padding: 1rem 2rem
+  //background-color: #f3efef4d
+  //background-color: #f3efef27
+  align-items: center
+  border-bottom: 1px solid #e0e0e0
+  // position: sticky
+  // top: 0
+
+.top-container-link-margin
+  margin-right: 1.5rem
+
+// Cart Menu
+.cart-badge-container
+  display: block
+  position: relative
+  cursor: pointer
+
+.wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  left: 16px
+  top: -10px
+  font-weight: 500
+  font-size: 0.9rem
+  background-color: $cart-badge-color
+  width: 23px
+  height: 23px
+  border-radius: 50%
+  color: white
+
+.cart-icon
+  width: 25px
+  height: 25px
+
+.cart-badge-container
+  margin-right: 2rem
+
+.nav-container
+  display: flex
+  margin: 2rem 0
+  margin-bottom: 4rem
+  //margin-top: 0
+  padding: 2rem 5.5rem
+  align-items: center
+  //background: #ffffff
+  background-color: $nav-bg-color
+  list-style-type: none
+  justify-content: center
+  //box-shadow: 0px 3px 15px 0px rgba(234,234,235,0.75)
+  //border-bottom: 1px solid rgba(234,234,235,0.80)
+
+#announcrement-container
+  background-color: #cdf1e5
+  display: flex
+  justify-content: center
+  font-weight: 500
+
+.position
+  // position: sticky
+  // top: 0
+  // z-index: 5
+
+.navigation-menu
+  display: flex
+  width: 100%
+
+a
+  text-decoration: none
+  color: black
+  margin: 0
+  padding: 0
+  padding-bottom: 3px
+  font-size: 1rem
+  font-weight: 400
+
+.nav  // Tremporary
+  //border: 1px solid black
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+nav
+  a
+    //transition: color 0.3s
+
+  a:hover
+    color: $nav-hover-color
+    //border-bottom: 1px solid $nav-hover-color
+    //transition: color 0.3s
+
+  a:last-of-type
+    margin-right: 0
+
+li
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+.logo-ham-container
+  display: flex
+  align-items: center
+  font-size: 1.3rem
+
+  a:hover
+    color: black
+
+// margin fix
+
+//----------------------tremp------------------------//
+
+.logo-img
+  height: 80px
+  width: 160px
+  //border: 1px solid black
+
+//--------------------------------------------------//
+
+.logo
+  font-size: 3rem//1.8rem
+  display: block
+  font-family: 'Billabong'
+  line-height: 25px
+  margin-bottom: 1rem
+
+
+#logo-link
+  margin-bottom: 0.8rem
+
+.logo:hover
+  color: black
+
+.nav
+  display: flex
+  align-items: center
+  li
+    margin-right: 2.5rem
+
+  // li:last-of-type
+  //   margin-right: 0
+
+.icon-btn
+  padding: 0
+  border: none
+  background-color: $nav-bg-color
+  cursor: pointer
+
+.icon-btn:hover
+  border: none
+
+#ham-icon
+  width: 27px
+  height: auto
+  display: none
+
+.search-icon
+  width: 22px
+  height: auto
+
+#s1
+  //visibility: hidden
+  display: none  // visibility hidden caused the horizontal scrolling
+
+#s2
+  margin-right: 0.5rem
+
+#logo-sm
+  display: none
+
+@media only screen and ( max-width: 1200px )
+  .nav-container
+    padding: 2.5rem 4rem
+
+  #ham-icon
+    width: 25px
+    height: auto
+
+  #search-icon
+    width: 25px
+    height: auto
+
+  .close-btn
+    margin-left: 3.8rem
+
+  .link-container
+    margin-left: 6rem
+
+  .info-container-main
+    margin-left: 6rem
+
+@media only screen and ( max-width: 1024px )
+
+  .nav-container
+    padding: 2.5rem 2rem
+
+  a
+    font-size: 1rem
+
+  .close-btn
+    margin-left: 1.4rem
+
+  .link-container
+    margin-left: 4rem
+
+  .info-container-main
+    margin-left: 4rem
+
+@media only screen and ( max-width: 769px )
+
+  #ham-icon
+    display: block
+
+  #logo-sm
+    display: block
+
+  .nav
+    display: none
+
+  .logo
+    margin: 0
+    font-size: 2.1rem
+
+  .nav-container
+    padding: 2rem
+    margin: 0.5 0 !important
+
+  #s1
+    //visibility: visible
+    display: block
+    width: 23px
+
+  .logo-ham-container
+    display: flex
+    justify-content: space-between
+    min-width: 100%
+
+  .close-btn
+    margin-top: 4.1rem
+
+  .link-container
+    margin-top: 10vh
+
+  .info-container-main
+    margin-top: 15vh
+
+@media only screen and ( max-width: 600px )
+  .logo
+    font-size: 1.9rem
+
+  #ham-icon
+    width: 23px
+    height: auto
+
+  #s1
+    width: 23px
+    height: auto
+
+  .close-btn
+    margin-top: 4.1rem
+
+  .link-container
+    margin-top: 10vh
+
+  .info-container-main
+    margin-top: 15vh
+
+  .reimagined
+    margin-top: 4rem
+
+@media only screen and ( max-width: 480px )
+  .nav-container
+    padding: 1.5rem 1rem
+    margin-top: 1.5rem
+
+  .close-btn
+    margin-top: 2.8rem
+    margin-left: 0.2rem
+
+  .link-container
+    margin-top: 5vh
+    margin-left: 2.5rem
+
+  .info-container
+    display: none
+
+  .info-container-main
+    margin-top: 0
+
+  #newsletter-banner
+    font-size: 1.5rem
+    margin-left: 1.4rem
+    margin-bottom: 0.5rem
+
+  #newsletter-container
+    display: flex
+    flex-direction: column
+    margin-top: 2rem
+
+  #newsletter-input
+    margin-left: 2.5rem
+    padding: 0.5rem 1rem
+    height: 3rem
+    width: 100%
+
+  #newsletter-btn
+    padding: 0.5rem
+    height: 2.8rem
+
+  #newsletter-note
+    font-size: 0.8rem
+    margin: 1rem 2.5rem
+
+  .newsletter-flex
+    display: flex
+    margin-right: 2.5rem
+
+  .reimagined
+    margin-top: 2rem
+    margin-left: 2rem

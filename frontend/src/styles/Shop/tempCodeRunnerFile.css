@@ -1,0 +1,18 @@
+.item-container {
+  -webkit-transition: padding 0.5s, -webkit-box-shadow 0.4s;
+  transition: padding 0.5s, -webkit-box-shadow 0.4s;
+  transition: box-shadow 0.4s, padding 0.5s;
+  transition: box-shadow 0.4s, padding 0.5s, -webkit-box-shadow 0.4s;
+}
+
+.item-container:hover {
+  -webkit-box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: padding 0.5s, -webkit-box-shadow 0.4s;
+  transition: padding 0.5s, -webkit-box-shadow 0.4s;
+  transition: box-shadow 0.4s, padding 0.5s;
+  transition: box-shadow 0.4s, padding 0.5s, -webkit-box-shadow 0.4s;
+  padding: 0.5rem;
+}
+
+/*# sourceMappingURL=tempCodeRunnerFile.css.map */

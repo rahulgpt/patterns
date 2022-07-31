@@ -1,0 +1,9 @@
+.kep-login-facebook {
+  font-size: calc(0.27548vw + 9.71074px) !important;
+  padding: calc(0.34435vw + 10.38843px) calc(0.34435vw + 18.38843px) !important;
+  width: 100%;
+}
+
+.kep-login-facebook .fa {
+  margin-right: calc(0.34435vw + 8.38843px) !important;
+}
