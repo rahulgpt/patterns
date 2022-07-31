@@ -2,6 +2,9 @@
 
 An ecommerce project made from scratch for selling surface patterns.
 
+<img width="1552" alt="ss1" src="https://user-images.githubusercontent.com/56781067/182037212-f0a7e2da-f02a-4eda-a044-ecfd22590fea.png">
+<img width="1552" alt="ss2" src="https://user-images.githubusercontent.com/56781067/182037242-f130e6b0-9e94-410d-845f-2b88fb008ea9.png">
+
 # Quickstart
 
 Create a virtual environment
