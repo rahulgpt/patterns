@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { authSignIn, authSignUp } from "../../actions/authActions";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import loader2 from "../Loader/Loader2";
 import "../../styles/Auth/Auth.css";
 
 class SignUp extends Component {
@@ -85,7 +84,7 @@ class SignUp extends Component {
             <div className="auth-btn-wrapper">
               {this.props.loading ? (
                 <button id="loader-btn" type="submit">
-                  {loader2}
+                  LOADING
                 </button>
               ) : (
                 <button
