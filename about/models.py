@@ -2,7 +2,7 @@ from django.db import models
 
 
 class AboutDetail(models.Model):
-    image = models.ImageField(upload_to='about_images')
+    image = models.ImageField(upload_to='about-images')
     heading1 = models.CharField(max_length=30)
     heading2 = models.CharField(max_length=30)
     paragraph = models.TextField()

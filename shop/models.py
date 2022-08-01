@@ -14,9 +14,9 @@ class Category(models.Model):
 
 class Item(models.Model):
     title = models.CharField(max_length=30)
-    keyimage = models.ImageField(upload_to='shop_images')
-    subimage1 = models.ImageField(upload_to='shop_images')
-    subimage2 = models.ImageField(upload_to='shop_images', blank=True)
+    keyimage = models.ImageField(upload_to='shop-images')
+    subimage1 = models.ImageField(upload_to='shop-images')
+    subimage2 = models.ImageField(upload_to='shop-images', blank=True)
     price = models.FloatField()
     discount_price = models.FloatField(blank=True, null=True)
     designed_by = models.CharField(max_length=30)

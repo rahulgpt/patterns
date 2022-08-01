@@ -145,3 +145,4 @@ config.py
 
 .vscode/
 .DS_Store
+static/
