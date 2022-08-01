@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
 import { fetchCart } from "../../actions/cartActions";
 import "../../styles/Auth/Auth.css";
-import FacebookAuth from "../FacebookAuth/FacebookAuth";
 
 class SignIn extends Component {
   constructor(props) {
@@ -94,10 +93,6 @@ class SignIn extends Component {
               </Link>
             </div>
           </form>
-
-          <span className="signin-opt-division">OR</span>
-
-          <FacebookAuth />
 
           <h1 className="signin-h1">New Here?</h1>
           <p id="reg-benefit">
