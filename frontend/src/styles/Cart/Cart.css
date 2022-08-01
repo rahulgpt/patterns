@@ -24,6 +24,21 @@
   padding-top: 2em;
 }
 
+.cart-container-mb {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #efefef;
+  padding: 1rem;
+  width: 600px;
+}
+
+.cart-sub-mb {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px dashed #efefef;
+  padding: 0.8rem;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -88,5 +103,22 @@
 @media (max-width: 780px) {
   .cart-container {
     padding: 0 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .cart-container-mb {
+    padding: 0;
+  }
+  .cart-sub-mb {
+    gap: 1rem;
+  }
+  .cart-sub-mb span {
+    font-size: 0.9rem;
+  }
+  .cart-sub-mb h4 {
+    font-size: 0.9rem;
+  }
+  .title-mb {
+    font-size: 1rem;
   }
 }

@@ -265,29 +265,31 @@ class Navbar extends Component {
             </Link>
           </div>
 
-          {localStorage.getItem("_shpuid") ? (
-            this.props.loading ? (
-              loader2
+          <div>
+            {localStorage.getItem("_shpuid") ? (
+              this.props.loading ? (
+                loader2
+              ) : (
+                <Link
+                  onClick={this.props.authSignOut}
+                  className="top-container-link-margin"
+                  to="#"
+                >
+                  Sign Out
+                </Link>
+              )
             ) : (
-              <Link
-                onClick={this.props.authSignOut}
-                className="top-container-link-margin"
-                to="#"
-              >
-                Sign Out
+              <Link className="top-container-link-margin" to="/signin">
+                Sign In
               </Link>
-            )
-          ) : (
-            <Link className="top-container-link-margin" to="/signin">
-              Sign In
-            </Link>
-          )}
+            )}
 
-          {localStorage.getItem("_shpuid") ? (
-            <Link to="/dashboard">Dashboard</Link>
-          ) : (
-            <Link to="/register">Register</Link>
-          )}
+            {localStorage.getItem("_shpuid") ? (
+              <Link to="/dashboard">Dashboard</Link>
+            ) : (
+              <Link to="/register">Register</Link>
+            )}
+          </div>
         </div>
 
         <nav className="nav-container">

@@ -104,7 +104,7 @@
 }
 
 .overlay-search {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .close-btn {
@@ -448,5 +448,6 @@ li {
   }
   #top-container {
     padding: 1rem;
+    justify-content: space-between;
   }
 }

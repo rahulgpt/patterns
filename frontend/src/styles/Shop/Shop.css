@@ -54,21 +54,35 @@
   color: #636363;
 }
 
-@media only screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .shop-container {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 6rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .shop-container {
     padding: 0 2em;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .shop-container {
     gap: 1rem;
     padding: 0 1rem;
+  }
+}
+@media (max-width: 430px) {
+  .shop-container {
+    gap: 0.5rem;
+    padding: 0 1rem;
+  }
+  .item-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .item-price {
+    font-size: 0.9rem;
   }
 }

@@ -4,6 +4,7 @@
   flex-direction: column;
   max-width: 35em;
   margin: auto;
+  padding: 0 2rem;
 }
 .contact-container h1 {
   font-weight: 400;
@@ -82,4 +83,10 @@
 
 #submit-btn:hover {
   background-color: #559466;
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 0 1rem;
+  }
 }

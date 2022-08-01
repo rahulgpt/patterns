@@ -116,26 +116,9 @@ class Cart extends Component {
               justifyContent: "center",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                // gap: "1.5rem",
-                border: "1px solid #efefef",
-                padding: "1rem",
-                width: "600px",
-              }}
-            >
+            <div className="cart-container-mb">
               {this.props.orderItems.map((orderItem) => (
-                <div
-                  key={orderItem.item.key}
-                  style={{
-                    display: "flex",
-                    gap: "2rem",
-                    borderBottom: "1px dashed #efefef",
-                    padding: "0.8rem",
-                  }}
-                >
+                <div key={orderItem.item.key} className="cart-sub-mb">
                   <img
                     style={{
                       height: "150px",
@@ -145,7 +128,9 @@ class Cart extends Component {
                     alt="product"
                   />
                   <div>
-                    <h3 style={{ color: "#539064" }}>{orderItem.item.title}</h3>
+                    <h3 style={{ color: "#539064" }} className="title-mb">
+                      {orderItem.item.title}
+                    </h3>
                     <span>
                       ${orderItem.item.discount_price || orderItem.item.price}{" "}
                       USD
