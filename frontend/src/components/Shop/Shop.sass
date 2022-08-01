@@ -13,7 +13,9 @@ $item-border-color: #F5EFE9
     gap: 30px
     //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
     grid-template-columns: repeat(3, 1fr)
-    padding: 0 18em
+    width: 900px
+    margin: auto
+    padding: 0 2rem
 
 .item-image
     width: 100%
@@ -31,6 +33,8 @@ $item-border-color: #F5EFE9
     width: 33px
     height: 30px
     cursor: pointer
+    margin-top: 0.5rem
+    margin-right: 0.5rem
 
 .sub-container
     display: flex
@@ -55,37 +59,19 @@ $item-border-color: #F5EFE9
     text-decoration: line-through 1px
     color: #636363
 
-@media screen and ( max-width: 1300px )
-    .shop-container
-        padding: 0 10em
-
-@media screen and ( max-width: 1200px )
-    .shop-container
-        padding: 0 8em
-
-@media only screen and ( max-width: 1024px )
-    .shop-container
-        padding: 0 6em
-
 @media only screen and ( max-width: 900px )
     .shop-container
         grid-template-columns: repeat(2, 1fr)
-
-@media only screen and ( max-width: 769px )
-    .shop-container
-        padding: 0 4em
+        padding: 0 6rem
 
 @media only screen and ( max-width: 600px )
     .shop-container
         padding: 0 2em
+        grid-template-columns: repeat(2, 1fr)
 
 @media only screen and ( max-width: 480px )
     .shop-container
-        grid-template-columns: 1fr
+        gap: 1rem
+        padding: 0 1rem
 
-    // .item-image
-    //     height: 200px
-
-@media only screen and ( max-width: 400px )
-    .shop-container
-        padding: 0 1em
+    

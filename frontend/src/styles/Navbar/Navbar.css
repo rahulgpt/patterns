@@ -56,7 +56,6 @@
   margin-left: 8rem;
   margin-top: 6rem;
 }
-
 .link-container h5 {
   color: white;
   font-size: 1.5rem;
@@ -72,12 +71,10 @@
 .info-container {
   margin-right: 6rem;
 }
-
 .info-container h3 {
   font-size: 1rem;
   margin-bottom: 0.3rem;
 }
-
 .info-container p {
   font-size: 1rem;
   margin-bottom: 0.3rem;
@@ -87,7 +84,6 @@
 .reimagined {
   margin-top: 2rem;
 }
-
 .reimagined a {
   margin-right: 0.8rem !important;
   border: 1px solid #68686a;
@@ -105,6 +101,10 @@
   z-index: 2;
   background-color: #18171b;
   color: white;
+}
+
+.overlay-search {
+  padding: 0 2rem;
 }
 
 .close-btn {
@@ -207,7 +207,6 @@ a {
 nav a:hover {
   color: #C84D0C;
 }
-
 nav a:last-of-type {
   margin-right: 0;
 }
@@ -223,7 +222,6 @@ li {
   align-items: center;
   font-size: 1.3rem;
 }
-
 .logo-ham-container a:hover {
   color: black;
 }
@@ -253,7 +251,6 @@ li {
   display: flex;
   align-items: center;
 }
-
 .nav li {
   margin-right: 2.5rem;
 }
@@ -343,7 +340,7 @@ li {
   }
   .logo {
     margin: 0;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
   }
   .nav-container {
     padding: 2rem;
@@ -369,8 +366,12 @@ li {
   }
 }
 @media only screen and (max-width: 600px) {
+  .nav-container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
   .logo {
-    font-size: 1.9rem;
+    font-size: 2.3rem;
   }
   #ham-icon {
     width: 23px;
@@ -396,7 +397,8 @@ li {
 @media only screen and (max-width: 480px) {
   .nav-container {
     padding: 1.5rem 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
   }
   .close-btn {
     margin-top: 2.8rem;
@@ -444,5 +446,7 @@ li {
     margin-top: 2rem;
     margin-left: 2rem;
   }
+  #top-container {
+    padding: 1rem;
+  }
 }
-/*# sourceMappingURL=Navbar.css.map */

@@ -2,7 +2,9 @@
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 18em;
+  width: 900px;
+  margin: auto;
+  padding: 0 2rem;
 }
 
 .item-image {
@@ -21,6 +23,8 @@
   width: 33px;
   height: 30px;
   cursor: pointer;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .sub-container {
@@ -50,43 +54,21 @@
   color: #636363;
 }
 
-@media screen and (max-width: 1300px) {
-  .shop-container {
-    padding: 0 10em;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .shop-container {
-    padding: 0 8em;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .shop-container {
-    padding: 0 6em;
-  }
-}
 @media only screen and (max-width: 900px) {
   .shop-container {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (max-width: 769px) {
-  .shop-container {
-    padding: 0 4em;
+    padding: 0 6rem;
   }
 }
 @media only screen and (max-width: 600px) {
   .shop-container {
     padding: 0 2em;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (max-width: 480px) {
   .shop-container {
-    grid-template-columns: 1fr;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .shop-container {
-    padding: 0 1em;
+    gap: 1rem;
+    padding: 0 1rem;
   }
 }

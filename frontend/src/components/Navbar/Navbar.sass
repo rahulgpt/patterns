@@ -102,6 +102,9 @@ $cart-badge-color: #ACC9CD
   background-color: $overlay-bg-color
   color: white
 
+.overlay-search 
+  padding: 0 2rem
+
 .close-btn
   background-color: $overlay-bg-color
   margin-left: 5.7rem
@@ -342,7 +345,7 @@ li
 
   .logo
     margin: 0
-    font-size: 2.1rem
+    font-size: 2.5rem
 
   .nav-container
     padding: 2rem
@@ -368,8 +371,12 @@ li
     margin-top: 15vh
 
 @media only screen and ( max-width: 600px )
+  .nav-container
+    margin-top: 1.5rem
+    margin-bottom: 1.5rem
+
   .logo
-    font-size: 1.9rem
+    font-size: 2.3rem
 
   #ham-icon
     width: 23px
@@ -394,7 +401,8 @@ li
 @media only screen and ( max-width: 480px )
   .nav-container
     padding: 1.5rem 1rem
-    margin-top: 1.5rem
+    margin-top: 1rem
+    margin-bottom: 1.5rem
 
   .close-btn
     margin-top: 2.8rem
@@ -441,3 +449,6 @@ li
   .reimagined
     margin-top: 2rem
     margin-left: 2rem
+
+  #top-container
+    padding: 1rem

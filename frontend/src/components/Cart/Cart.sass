@@ -1,7 +1,9 @@
 $border-color: #e0e0e0
 
 .cart-container
-    padding: 0 18em
+    width: 900px
+    margin: auto
+    padding: 0 2rem
 
     table
         width: 100%
@@ -16,8 +18,8 @@ $border-color: #e0e0e0
         padding: 2em
         border-bottom: 1px solid $border-color
 
-    th:last-of-type
-        padding: 0
+    // th:last-of-type
+    //     padding: 0
 
     td
         padding: 2em
@@ -62,9 +64,7 @@ $border-color: #e0e0e0
     flex-direction: column
 
 .cart-remove
-    position: absolute
-    left: 170px
-    top: 77px
+
     cursor: pointer
 
 #continue-shopping
@@ -75,3 +75,12 @@ $border-color: #e0e0e0
     text-align: center
     font-size: 0.9em
     margin-bottom: 30vh
+
+@media (max-width: 900px) 
+    .cart-container
+        td
+            font-size: 0.9rem
+
+@media (max-width: 780px) 
+    .cart-container
+        padding: 0 1rem

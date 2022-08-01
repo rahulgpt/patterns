@@ -5,11 +5,13 @@ import { connect } from "react-redux";
 import { fetchCart, removeCart } from "../../actions/cartActions";
 import { authAxios } from "../../utils";
 import { removeFromCartURL } from "../../constants";
+import { ActionIcon } from "@mantine/core";
 
 import "../../styles/Cart/Cart.css";
 
 class Cart extends Component {
   componentDidMount() {
+    this.width = window.innerWidth;
     this.props.fetchCart();
   }
 
@@ -34,7 +36,7 @@ class Cart extends Component {
 
   render() {
     const items = this.props.orderItems.map((orderItem) => (
-      <tr>
+      <tr key={orderItem.item.id}>
         <td className="flex">
           <img
             className="product-img"
@@ -53,12 +55,11 @@ class Cart extends Component {
         <td>
           {/* <img id='cart-file-type' src={FileType} /> */}
           <h4 style={{ fontWeight: 400 }}>Jpeg, Png</h4>
-          <img
-            src={CloseIcon}
-            onClick={() => this.handleRemoveItem(orderItem.id)}
-            className="cart-remove"
-            alt="close-icon"
-          />
+        </td>
+        <td>
+          <ActionIcon onClick={() => this.handleRemoveItem(orderItem.id)}>
+            <img src={CloseIcon} className="cart-remove" alt="close-icon" />
+          </ActionIcon>
         </td>
       </tr>
     ));
@@ -84,7 +85,7 @@ class Cart extends Component {
               to view your cart.
             </p>
           )
-        ) : (
+        ) : window.innerWidth > 800 ? (
           <React.Fragment>
             <table>
               <thead>
@@ -92,6 +93,7 @@ class Cart extends Component {
                   <th>Product</th>
                   <th>Price</th>
                   <th>FileType</th>
+                  <th></th>
                 </tr>
               </thead>
 
@@ -107,6 +109,64 @@ class Cart extends Component {
               </Link>
             </div>
           </React.Fragment>
+        ) : (
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                // gap: "1.5rem",
+                border: "1px solid #efefef",
+                padding: "1rem",
+                width: "600px",
+              }}
+            >
+              {this.props.orderItems.map((orderItem) => (
+                <div
+                  key={orderItem.item.key}
+                  style={{
+                    display: "flex",
+                    gap: "2rem",
+                    borderBottom: "1px dashed #efefef",
+                    padding: "0.8rem",
+                  }}
+                >
+                  <img
+                    style={{
+                      height: "150px",
+                      width: "150px",
+                    }}
+                    src={`${process.env.REACT_APP_BACKEND_URL}${orderItem.item.keyimage}`}
+                    alt="product"
+                  />
+                  <div>
+                    <h3 style={{ color: "#539064" }}>{orderItem.item.title}</h3>
+                    <span>
+                      ${orderItem.item.discount_price || orderItem.item.price}{" "}
+                      USD
+                    </span>
+                    <h4 style={{ fontWeight: 400 }}>Jpeg, Png</h4>
+                    <ActionIcon
+                      onClick={() => this.handleRemoveItem(orderItem.id)}
+                      style={{ marginTop: "1rem" }}
+                      variant="outline"
+                    >
+                      <img
+                        src={CloseIcon}
+                        className="cart-remove"
+                        alt="close-icon"
+                      />
+                    </ActionIcon>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         )}
       </div>
     );

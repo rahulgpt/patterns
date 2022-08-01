@@ -2,7 +2,6 @@ const localhost = "http://127.0.0.1:8000";
 let apiUrl = "/api";
 
 if (process.env.REACT_APP_DEV_ENV === "true") apiUrl = `${localhost}${apiUrl}`;
-console.log(apiUrl, process.env.REACT_APP_DEV_ENV);
 
 export const endpoint = `${apiUrl}`;
 

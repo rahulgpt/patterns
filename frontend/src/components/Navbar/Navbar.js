@@ -16,6 +16,7 @@ import { setTitle } from "../../actions/headerActions";
 import CartIcon2 from "../icons/CartIcon.svg";
 import loader2 from "../Loader/Loader2";
 import { authSignIn, authSignUp, authSignOut } from "../../actions/authActions";
+import { Overlay } from "@mantine/core";
 
 class Navbar extends Component {
   constructor(props) {
@@ -223,7 +224,7 @@ class Navbar extends Component {
     );
 
     const searchMenu = (
-      <div ref={this.overLaySearch} className="overlay-menu">
+      <div ref={this.overLaySearch} className="overlay-menu overlay-search">
         <div className="search-flex">
           <button
             className="close-btn-search"
@@ -245,19 +246,12 @@ class Navbar extends Component {
       </div>
     );
 
-    // const shopMenu = (
-    //     <div className='shop-menu-container' ref={this.shopContainer}>
-    //         <ul ref={this.shopContainerLinks}>
-    //             <li><Link to='/shop'>Prints</Link></li>
-    //             <li><a href='https://www.redbubble.com/people/patternmyriad/shop?asc=u'>Red Bubble</a></li>
-    //         </ul>
-    //     </div>
-    // )
-
     return (
       <div className="position">
-        {this.props.overlayMenu && overlayMenu}
-        {this.props.overlaySearchMenu && searchMenu}
+        {this.props.overlayMenu && <Overlay opacity={1}>{overlayMenu}</Overlay>}
+        {this.props.overlaySearchMenu && (
+          <Overlay opacity={1}>{searchMenu}</Overlay>
+        )}
 
         <div id="announcement-container"></div>
 
@@ -278,6 +272,7 @@ class Navbar extends Component {
               <Link
                 onClick={this.props.authSignOut}
                 className="top-container-link-margin"
+                to="#"
               >
                 Sign Out
               </Link>

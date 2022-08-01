@@ -3,7 +3,7 @@ import "../../styles/ProductDetail/ProductDetail.css";
 import { connect } from "react-redux";
 import { fetchItem } from "../../actions/productDetailActions";
 import { addToCart } from "../../actions/cartActions";
-import ImageContainer from "../ImageContainer/ImageConatiner";
+import ImageContainer from "../ImageContainer/ImageContainer";
 import { fetchCart } from "../../actions/cartActions";
 
 class ProductDetail extends Component {

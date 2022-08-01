@@ -8,7 +8,7 @@ import { Link, Redirect } from "react-router-dom";
 import Lottie from "react-lottie";
 import { connect } from "react-redux";
 import { fetchCart, addToCart } from "../../actions/cartActions";
-import ImageContainer from "../ImageContainer/ImageConatiner";
+import ImageContainer from "../ImageContainer/ImageContainer";
 import { showNotification } from "@mantine/notifications";
 
 class Shop extends Component {
@@ -47,7 +47,7 @@ class Shop extends Component {
     };
 
     const items = this.props.items.map((item) => (
-      <div className="item-container">
+      <div className="item-container" key={item.id}>
         <Link to={`shop/${item.slug}/`}>
           <div className="img-wrapper">
             <ImageContainer
@@ -56,12 +56,6 @@ class Shop extends Component {
               width={item.image_width}
               alt={`gallery-image: ${item.title}`}
             />
-            {/* <motion.img
-                            whileHover={{ scale: 1.1 }}
-                            transition={{ duration: 0.3 }}
-                            src={item.keyimage} className='item-image'
-                            alt='product-img'
-                        /> */}
           </div>
         </Link>
         <div className="sub-container">
@@ -117,22 +111,7 @@ class Shop extends Component {
       <div className="loader-shop-container">
         {this.props.loading && loader}
 
-        <div className="shop-container">
-          {!this.props.loading && items}
-          {/* <div className='item-container'>
-                    <Link to='productdetail'>
-                        <img src={Image2} className='item-image' />
-                    </Link>
-                    <div className='sub-container'>
-                        <div className='title-price'>
-                            <h5 className='item-title'>The Bird Bard</h5>
-                            <span className='item-price'>$8.00</span>
-                        </div>
-                        <img src={AddToCart} className="add-to-cart" />
-                        
-                    </div>
-                </div> */}
-        </div>
+        <div className="shop-container">{!this.props.loading && items}</div>
       </div>
     );
   }

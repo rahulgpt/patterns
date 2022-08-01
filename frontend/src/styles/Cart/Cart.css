@@ -1,5 +1,7 @@
 .cart-container {
-  padding: 0 18em;
+  width: 900px;
+  margin: auto;
+  padding: 0 2rem;
 }
 .cart-container table {
   width: 100%;
@@ -13,9 +15,6 @@
   text-align: left;
   padding: 2em;
   border-bottom: 1px solid #e0e0e0;
-}
-.cart-container th:last-of-type {
-  padding: 0;
 }
 .cart-container td {
   padding: 2em;
@@ -67,9 +66,6 @@
 }
 
 .cart-remove {
-  position: absolute;
-  left: 170px;
-  top: 77px;
   cursor: pointer;
 }
 
@@ -82,4 +78,15 @@
   text-align: center;
   font-size: 0.9em;
   margin-bottom: 30vh;
+}
+
+@media (max-width: 900px) {
+  .cart-container td {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 780px) {
+  .cart-container {
+    padding: 0 1rem;
+  }
 }

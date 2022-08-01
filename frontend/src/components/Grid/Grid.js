@@ -3,7 +3,7 @@ import "../../styles/Grid/Grid.css";
 import { connect } from "react-redux";
 import { fetchImages } from "../../actions/gridActions";
 import loader from "../Loader/Loader";
-import ImageContainer from "../ImageContainer/ImageConatiner";
+import ImageContainer from "../ImageContainer/ImageContainer";
 
 class Grid extends Component {
   componentDidMount() {

@@ -1,5 +1,5 @@
 import React from "react";
-import useIntersectionObserver from "../../hooks/use-intersection-observer";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import "../../styles/ImageContainer/ImageContainer.css";
 import Image from "../Image/Image";
 
