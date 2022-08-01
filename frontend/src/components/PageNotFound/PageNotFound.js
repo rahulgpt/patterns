@@ -11,6 +11,7 @@ class PageNotFound extends Component {
           alignItems: "center",
           flexDirection: "column",
           gap: "4rem",
+          padding: "0 1rem",
         }}
       >
         <img src={image404} alt="404 - page not found" style={{ width: 400 }} />
