@@ -20,7 +20,20 @@
 .about-img {
   height: 100%;
   width: 100%;
+}
+
+.image-attribution-wrapper {
   margin-bottom: 3em;
+}
+
+.attribution {
+  margin-top: 0.5rem;
+  color: #a4a4a4;
+  font-size: 0.8rem;
+  float: right;
+}
+.attribution a {
+  font-size: 0.8rem;
 }
 
 .diff-font {

@@ -6,7 +6,19 @@ class About extends Component {
   render() {
     return (
       <div className="about-container">
-        <img src={AboutImage} className="about-img" alt="profilepic" />
+        <div className="image-attribution-wrapper">
+          <img src={AboutImage} className="about-img" alt="profilepic" />
+          <span className="attribution">
+            Photo by{" "}
+            <a href="https://unsplash.com/@sspaula?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Sergio de Paula
+            </a>{" "}
+            on{" "}
+            <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </span>
+        </div>
         <span>
           <h1 className="diff-font">Hey there !</h1>
           <h1 className="intro-name">I am Aaron</h1>
