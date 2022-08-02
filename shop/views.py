@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 from rest_framework.response import Response
 from django.conf import settings
@@ -215,7 +216,7 @@ class PaymentView(APIView):
 
         except stripe.error.RateLimitError as e:
             # Too many requests made to the API too quickly
-            messages.warning(self.request, "Rate limit error")
+            # messages.warning(self.request, "Rate limit error")
             return Response({"message": "Rate limit error"}, status=HTTP_400_BAD_REQUEST)
 
         except stripe.error.InvalidRequestError as e:

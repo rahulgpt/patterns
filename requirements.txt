@@ -13,6 +13,8 @@ defusedxml==0.6.0
 dj-rest-auth==1.0.9
 Django==3.0.7
 django-admin-interface==0.12.2
+django-allauth==0.51.0
+django-cleanup==6.0.0
 django-colorfield==0.3.1
 django-cors-headers==3.4.0
 django-flat-responsive==2.0
@@ -30,6 +32,7 @@ outcome==1.1.0
 Pillow==9.2.0
 pycodestyle==2.6.0
 pycparser==2.21
+PyJWT==2.4.0
 pynvim==0.4.3
 pyOpenSSL==21.0.0
 python-dateutil==2.8.2

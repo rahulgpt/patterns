@@ -40,8 +40,9 @@ INSTALLED_APPS = [
     'gallery.apps.GalleryConfig',
     'shop.apps.ShopConfig',
     'about.apps.AboutConfig',
-    'emailverification',
+    # 'emailverification',
     'storages',
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 SITE_ID = 3
