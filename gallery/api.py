@@ -6,7 +6,7 @@ from .serializers import GallerySerializer
 
 
 class GalleryViewSet(viewsets.ModelViewSet):
-    queryset = GalleryImage.objects.all().order_by('-date_uploaded')
+    queryset = GalleryImage.objects.all().order_by('order')
     permission_classes = [
         permissions.AllowAny
     ]

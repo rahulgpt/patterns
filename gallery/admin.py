@@ -8,11 +8,12 @@ class GalleryImageAdmin(admin.ModelAdmin):
     fields = [
         'title',
         'imagesrc',
+        'order',
         'date_uploaded',
         'date_modified',
     ]
 
-    list_display = ('title', 'date_uploaded', 'date_modified')
+    list_display = ('title', 'order', 'date_uploaded', 'date_modified')
 
     readonly_fields = ['date_uploaded', 'date_modified']
 
