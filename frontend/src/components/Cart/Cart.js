@@ -124,7 +124,7 @@ class Cart extends Component {
                       height: "150px",
                       width: "150px",
                     }}
-                    src={`${process.env.REACT_APP_BACKEND_URL}${orderItem.item.keyimage}`}
+                    src={`${orderItem.item.keyimage}`}
                     alt="product"
                   />
                   <div>
