@@ -40,7 +40,7 @@ class Cart extends Component {
         <td className="flex">
           <img
             className="product-img"
-            src={`${process.env.REACT_APP_BACKEND_URL}${orderItem.item.keyimage}`}
+            src={`${orderItem.item.keyimage}`}
             alt="product"
           />
           <h3>{orderItem.item.title}</h3>
