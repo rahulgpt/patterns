@@ -1,4 +1,5 @@
 import os
+import django_heroku
 from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -9,14 +10,20 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '7-ikvfx+(7%s(8*tyn@3gc6epi(xp4x6=vx5*q#mf06cu^lnw6'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (config('DEBUG') == 'True')
 
-CORS_ORIGIN_ALLOW_ALL = True
+ALLOWED_HOSTS = ['localhost', '192.168.1.21']
 
-ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_ALLOW_ALL = False
+
+CORS_ORIGIN_WHITELIST = (
+  'http://localhost:8000',
+  'http://localhost:3000',
+  'http://192.168.1.21:3000'
+)
 
 # Application definition
 
@@ -135,13 +142,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "frontend/build/static"),
 ]
 
-
 MEDIA_URL = '/media/'
-
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
@@ -177,3 +181,5 @@ STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 STRIPE_PUBLIC_KEY = config('STRIPE_TEST_PUBLIC_KEY')
 STRIPE_SECRET_KEY = config('STRIPE_TEST_SECRET_KEY')
+
+django_heroku.settings(locals())
