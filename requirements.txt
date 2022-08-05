@@ -1,4 +1,4 @@
-asgiref==3.2.10
+asgiref==3.5.2
 async-generator==1.10
 attrs==21.2.0
 autopep8==1.5.3
@@ -10,8 +10,9 @@ chardet==3.0.4
 cryptography==36.0.1
 DateTime==4.3
 defusedxml==0.6.0
-dj-rest-auth==1.0.9
-Django==3.0.7
+dj-database-url==1.0.0
+dj-rest-auth==2.2.5
+Django==4.1
 django-admin-interface==0.12.2
 django-allauth==0.51.0
 django-cleanup==6.0.0
@@ -19,9 +20,10 @@ django-colorfield==0.3.1
 django-cors-headers==3.4.0
 django-flat-responsive==2.0
 django-flat-theme==1.1.4
+django-heroku==0.3.1
 django-rest-framework==0.1.0
 django-storages==1.12.3
-djangorestframework==3.11.0
+djangorestframework==3.13.1
 greenlet==1.1.2
 gunicorn==20.1.0
 h11==0.12.0
@@ -31,6 +33,7 @@ msgpack==1.0.3
 oauthlib==3.1.0
 outcome==1.1.0
 Pillow==9.2.0
+psycopg2==2.9.3
 pycodestyle==2.6.0
 pycparser==2.21
 PyJWT==2.4.0
@@ -52,5 +55,6 @@ toml==0.10.1
 trio==0.19.0
 trio-websocket==0.9.2
 urllib3==1.25.9
+whitenoise==6.2.0
 wsproto==1.0.0
 zope.interface==5.1.0
