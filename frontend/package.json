@@ -54,5 +54,8 @@
   },
   "devDependencies": {
     "@babel/runtime": "^7.18.9"
+  },
+  "engines": {
+    "node": "16.14.0"
   }
 }
