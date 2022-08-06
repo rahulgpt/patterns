@@ -12,7 +12,7 @@ DateTime==4.3
 defusedxml==0.6.0
 dj-database-url==1.0.0
 dj-rest-auth==2.2.5
-Django==4.1
+Django==3.2
 django-admin-interface==0.12.2
 django-allauth==0.51.0
 django-cleanup==6.0.0
@@ -54,5 +54,6 @@ toml==0.10.1
 trio==0.19.0
 trio-websocket==0.9.2
 urllib3==1.25.9
+whitenoise==6.2.0
 wsproto==1.0.0
 zope.interface==5.1.0
