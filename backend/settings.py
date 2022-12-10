@@ -19,7 +19,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (config('DEBUG') == 'True')
 
-ALLOWED_HOSTS = ['localhost', '192.168.1.21', 'patterns-wa.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '192.168.1.21', 'patterns-wa.herokuapp.com', 'https://patterns.up.railway.app/']
 
 CORS_ORIGIN_ALLOW_ALL = False
 
