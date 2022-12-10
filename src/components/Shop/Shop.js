@@ -10,7 +10,6 @@ import { connect } from "react-redux";
 import { fetchCart, addToCart } from "../../actions/cartActions";
 import ImageContainer from "../ImageContainer/ImageContainer";
 import { showNotification } from "@mantine/notifications";
-import { endpoint } from "../../constants";
 
 class Shop extends Component {
   constructor(props) {
@@ -49,7 +48,7 @@ class Shop extends Component {
 
     const items = this.props.items.map((item) => (
       <div className="item-container" key={item.id}>
-        <Link to={`${endpoint}/shop/${item.slug}/`}>
+        <Link to={`/shop/${item.slug}/`}>
           <div className="img-wrapper">
             <ImageContainer
               src={item.keyimage}
