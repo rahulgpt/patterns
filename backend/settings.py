@@ -29,6 +29,8 @@ CORS_ORIGIN_WHITELIST = (
   'http://192.168.1.21:3000'
 )
 
+CSRF_TRUSTED_ORIGINS = ['https://patterns.up.railway.app']
+
 # Application definition
 
 INSTALLED_APPS = [
